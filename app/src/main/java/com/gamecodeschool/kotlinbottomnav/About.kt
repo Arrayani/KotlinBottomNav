@@ -14,10 +14,14 @@ class About : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about)
 
+        navigasiBawah()
+
+
+    }
+
+    private fun navigasiBawah() {
         bottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigationView.selectedItemId = R.id.about
-
-
         bottomNavigationView.setOnItemSelectedListener (object:
             NavigationView.OnNavigationItemSelectedListener,
             NavigationBarView.OnItemSelectedListener {

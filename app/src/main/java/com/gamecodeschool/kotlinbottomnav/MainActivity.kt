@@ -14,7 +14,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        navigasiBawah()
 
+    }
+    private fun navigasiBawah(){
         bottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigationView.selectedItemId = R.id.home
 
@@ -40,9 +43,5 @@ class MainActivity : AppCompatActivity() {
             }
 
         } )
-
-
-
-
     }
 }

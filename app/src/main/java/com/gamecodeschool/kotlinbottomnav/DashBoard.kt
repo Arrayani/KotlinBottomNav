@@ -13,9 +13,12 @@ class DashBoard : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dash_board)
+        navigasiBawah()
+    }
+
+    private fun navigasiBawah() {
         bottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigationView.selectedItemId = R.id.dashboard
-
 
         bottomNavigationView.setOnItemSelectedListener (object:
             NavigationView.OnNavigationItemSelectedListener,
